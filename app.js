@@ -1,8 +1,18 @@
 // 核心逻辑的程序入口
 
+const fs = require('fs')
+class App {
+    constructor(){
 
-module.exports = (request, response) => {
+    }
+    initServer(request, response)  {
     // let string = JSON.stringify(require('./package'))
     // respose.write('1,2,3')
-    response.end('I am yes hello world!')
+        fs.readFile('./public/index.html', 'utf8', (error, data) => {
+            response.end(data)
+        })
+
 }
+}
+
+module.exports =  App
