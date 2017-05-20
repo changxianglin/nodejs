@@ -5,13 +5,15 @@ class App {
     constructor(){
 
     }
-    initServer(request, response)  {
-    // let string = JSON.stringify(require('./package'))
-    // respose.write('1,2,3')
-        fs.readFile('./public/index.html', 'utf8', (error, data) => {
-            response.end(data)
-        })
+    initServer(){
+        //初始化工作
+        // const packages = require('./public/index.txt')
 
+        return(request, response) => {
+            fs.readFile('./public/index.html', 'utf8', (error, data) => {
+                response.end(data)
+        })
+        }
 }
 }
 
