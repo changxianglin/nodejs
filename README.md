@@ -1,4 +1,6 @@
 # nodejs
+* [相关视频链接](https://search.bilibili.com/all?keyword=NODE)
+---
 nodejs is huge magic
 ### node can do http-server (npm install http-server -g) (http-server)
 # 致胜之道
