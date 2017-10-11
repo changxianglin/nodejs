@@ -62,6 +62,10 @@ app.set("view engine", "handlebars")
 //     res.render("home")
 // })
 
+// app.use("express.static(__dirname + '/public')")
+
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function(req, res) {
 res.render('home');
 });
