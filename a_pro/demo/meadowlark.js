@@ -34,12 +34,26 @@ var express = require("express")
 // })
 
 
-var app = express()
+// var app = express()
+// app.set("port", process.env.PORT || 3000)
+// var handlebars = require("express3-handlebars")
+//                 .create({ defaultLayout: "main"})
+// app.engine("handlebars", handlebars.engine)
+// app.set("view engine", "handlebars")
+
+var app = express();
 app.set("port", process.env.PORT || 3000)
-var handlebars = require("express3-handlebars")
-                .create({ defaultLayout: "main"})
-app.engine("handlebars", handlebars.engine)
-app.set("view engine", "handlebars")
+// 设置 handlebars 视图 引擎
+// var handlebars = require('express3-handlebars').create({ defaultLayout:'main' });
+// app.engine('handlebars', handlebars.engine);
+// app.set('view engine', 'handlebars');
+
+var exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs.create({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+
+
 
 app.get("/", function(req, res) {
     res.render("home")
