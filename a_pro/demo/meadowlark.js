@@ -65,7 +65,10 @@ app.set("view engine", "handlebars")
 
 // app.use("express.static(__dirname + '/public')")
 
-
+app.use(function(req, res, next) {
+    res.onlocals.showTests = app.get("env") !== "production" && req.query.test === "1"
+    next()
+})
 
 
 app.use(express.static(__dirname + '/public'));
