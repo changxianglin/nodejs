@@ -1,19 +1,23 @@
 const express = require("express")
+const cors = require("cors")
 const app = express()
 
 app.get("/", function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.send("home page")
 })
 
 app.get("/about", function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.send("about")
 })
 
 app.get("/index", function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.send("index")
 })
 
-app.all('*', function(req, res, next) {
+app.get('/', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
