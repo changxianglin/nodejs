@@ -1,56 +1,94 @@
-// var http = require("http")
-// http.createServer(function(req, res) {
-//     res.writeHead(200, {"Content-type": "text/plain"})
-//     res.end("this is a page......\n")
-// }).listen(3000)
-// console.log("end")
+var log = console.log.bind(console)
 
-// var http = require("http")
-// http.createServer(function(request, response) {
+var foo = function() {
+    console.log(123)
+}
+foo()
+
+var bar = function() {
+    console.log(223)
+}
+
+bar()
+
+var baz = function(s, f) {
+    log(s + f)
+    return s + f
+}
+
+baz(123, 456)
+
+var website = function(a, b, c, d, e) {
+    log(arguments)
+    return arguments[0] + arguments[1]
+}
+
+website(1, 2, 3, 4, 5)
+
+var rouzi = function() {
+    log('fack you !')
+}
+
+rouzi()
+
+// use it to work
+// very good
+
+// var http = require('http')
 //
-//   response.writeHead(200, {'Content-type': 'text/plain'})
-//   response.end("已经访问到页面了的。。。\n")
-// }).listen(9000)
-// console.log("server running at http://127.0.0.1:9000")
+// http.createServer(function(req, res) {
+//     res.writeHead(200, {'Content-Type': 'text/plain'})
+//     res.end('welcome,zhourong!')
+// }).listen(3000)
+//
+// log('Server is running.')
 
-var html = "<div style = 'color: red;'><h1>this is GET home page</h1></div>"
-var posthtml = "<div style = 'color: red;'><h1>this is POST home page</h1></div>"
-var errHTML = "<div style = 'color: red;'><h1>404</h1><ul><li>你的请求发到了太空</li></ul></div>"
-var express = require("express")
-var app = express()
-app.get('/', function(req, res) {
-  console.log("GET")
-  res.send(html)
-})
+// var http = require('http')
+// var url = require('url')
+// var util = require('util')
+//
+// http.createServer(function(req, res) {
+//     res.writeHead(200, {'Content-Type': 'text/plain; charset = utf-8'})
+//     res.end(util.inspect(url.parse(req.url, true)))
+// }).listen(3000)
+//
+var http = require('http')
+var util = require('util')
+var querystring = require('querystring')
 
-app.post("/", function(req, res) {
-    console.log("POST")
-    res.send(postHTML)
-})
+http.createServer(function(req, res) {
+    var post = ''
 
-app.get("/list_user", function(req, res) {
-      console.log("LIST")
-      res.send("list user for get")
-})
+    req.on('data', function(chunk) {
+        post += chunk
+    })
+    req.on('end', function() {
+        post = querystring.parse(post)
+        res.end(util.inspect(post))
+    })
+}).listen(3000)
 
-app.get("/del_user", function(req, res) {
-    console.log("DEL")
-    res.send("del list user for get")
-})
+// var mysql = require('mysql')
+// var connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password:'zhangsan',
+//     database: 'test'
+// })
+// connection.connect()
+//
+// var sql = 'SELECT * FROM website'
+//
+// connection.query(sql, function(err, result) {
+//     if (err) {
+//         log('[SELECT ERROR] - ', err.message)
+//         return
+//     }
+//
+//     log('------------------SELECT-------------------')
+//     log(result)
+//     log('------------------------------------\n\n')
+// })
+//
+// connection.end()
 
-app.get("/ab*cd", function(req, res) {
-    console.log("...")
-    res.send("正则")
-})
-
-app.get("*", function(req, res) {
-  console.log("404")
-  res.send(errHTML)
-})
-
-var server = app.listen(3000, function() {
-    var host = server.address().address
-    var port = server.address().port
-
-    console.log("first page , can to go websit http://%s:%s", host, port)
-})
