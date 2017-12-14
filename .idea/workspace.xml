@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44f650e-f6e6-4248-901e-7d0da356d5ac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/http/http.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/http/smtp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/net/net.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/net/other.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/简单的接口测试.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/fs/fsWrite.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/fs/test.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/http2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/http2C.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/https.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/udp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/udpc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/websocket.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/myIframe/client.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/myIframe/test.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/http/http.js" afterPath="$PROJECT_DIR$/http/http.js" />
+      <change beforePath="$PROJECT_DIR$/net/client.js" afterPath="$PROJECT_DIR$/net/client.js" />
+      <change beforePath="$PROJECT_DIR$/net/server.js" afterPath="$PROJECT_DIR$/net/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,61 +30,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="other.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/other.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="net.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/net.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="http.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/http/http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smtp.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/http/smtp.js">
+      <file leaf-file-name="stream.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/stream.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="udp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/udp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="udpc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/udpc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="77" lean-forward="true" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/http2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http2C.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/http2C.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="websocket.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/websocket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="https.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/http/https.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fsWrite.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fs/fsWrite.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fswrite.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fs/fswrite.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -89,13 +138,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/net/server.js" />
-        <option value="$PROJECT_DIR$/net/client.js" />
         <option value="$PROJECT_DIR$/简单的接口测试.md" />
         <option value="$PROJECT_DIR$/net/other.js" />
         <option value="$PROJECT_DIR$/net/net.md" />
-        <option value="$PROJECT_DIR$/http/http.js" />
         <option value="$PROJECT_DIR$/http/smtp.js" />
+        <option value="$PROJECT_DIR$/http/http.js" />
+        <option value="$PROJECT_DIR$/net/server.js" />
+        <option value="$PROJECT_DIR$/net/client.js" />
+        <option value="$PROJECT_DIR$/myIframe/test.md" />
+        <option value="$PROJECT_DIR$/myIframe/server.js" />
+        <option value="$PROJECT_DIR$/myIframe/client.js" />
+        <option value="$PROJECT_DIR$/fs/test.md" />
+        <option value="$PROJECT_DIR$/fs/fs.js" />
+        <option value="$PROJECT_DIR$/fs/fsWrite.js" />
+        <option value="$PROJECT_DIR$/http/stream.js" />
+        <option value="$PROJECT_DIR$/http/udpc.js" />
+        <option value="$PROJECT_DIR$/http/udp.js" />
+        <option value="$PROJECT_DIR$/http/http2.js" />
+        <option value="$PROJECT_DIR$/http/http2C.js" />
+        <option value="$PROJECT_DIR$/http/websocket.js" />
+        <option value="$PROJECT_DIR$/http/https.js" />
       </list>
     </option>
   </component>
@@ -115,12 +177,11 @@
     <handled-path value="$PROJECT_DIR$/a_pro/demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/a_pro/newDemo/node_modules" />
     <handled-path value="$PROJECT_DIR$/a_pro/node_modules" />
-    <handled-path value="$PROJECT_DIR$/http/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="980" />
-    <option name="y" value="15" />
-    <option name="width" value="960" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-13" />
+    <option name="y" value="1" />
+    <option name="width" value="948" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -160,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -177,7 +239,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,26 +261,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.smtp.js">
-    <configuration name="client.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="client.js" working-dir="$PROJECT_DIR$/net" />
-    <configuration name="http.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="http.js" working-dir="$PROJECT_DIR$/http" />
-    <configuration name="other.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="other.js" working-dir="$PROJECT_DIR$/net" />
-    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/net" />
-    <configuration name="smtp.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="smtp.js" working-dir="$PROJECT_DIR$/http" />
+  <component name="RunManager" selected="Node.js.https.js">
+    <configuration name="http2C.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="http2C.js" working-dir="$PROJECT_DIR$/http" />
+    <configuration name="http2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="http2.js" working-dir="$PROJECT_DIR$/http" />
+    <configuration name="https.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="https.js" working-dir="$PROJECT_DIR$/http" />
+    <configuration name="udpc.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpc.js" working-dir="$PROJECT_DIR$/http" />
+    <configuration name="websocket.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="websocket.js" working-dir="$PROJECT_DIR$/http" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.client.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.other.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.http.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.smtp.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.udpc.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.http2.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.http2C.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.websocket.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.https.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.smtp.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.other.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.http.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.client.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.https.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.websocket.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.http2C.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.http2.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.udpc.js" />
       </list>
     </recent_temporary>
   </component>
@@ -238,21 +299,23 @@
       <updated>1513135695684</updated>
       <workItem from="1513135701066" duration="11306000" />
       <workItem from="1513156599086" duration="3032000" />
+      <workItem from="1513214067186" duration="20074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14338000" />
+    <option name="totallyTimeSpent" value="34412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="980" y="15" width="960" height="1000" extended-state="0" />
+    <frame x="-13" y="1" width="948" height="1000" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35287485" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -277,6 +340,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/net/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/other.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/net.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -332,21 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -354,18 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/client.js">
+    <entry file="file://$PROJECT_DIR$/http/smtp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net/other.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="240">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -378,18 +458,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/http.js">
+    <entry file="file://$PROJECT_DIR$/net/other.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/smtp.js">
+    <entry file="file://$PROJECT_DIR$/myIframe/test.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myIframe/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.4.0/core-modules/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1476">
+          <caret line="1044" column="11" lean-forward="true" selection-start-line="1044" selection-start-column="11" selection-end-line="1044" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myIframe/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs/test.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs/fsWrite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fs/fswrite.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/stream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/udp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/udpc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="77" lean-forward="true" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/http2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/http2C.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/websocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/https.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>

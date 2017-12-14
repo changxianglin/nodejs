@@ -1,0 +1,1 @@
+This context for test fs.readdirSync.

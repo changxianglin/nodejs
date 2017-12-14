@@ -4,7 +4,7 @@ const log = console.log.bind(console)
 const server = new net.Server()
 
 const host = ''
-const port = 2000
+const port = 3000
 
 server.listen(port, host, () => {
     log('listen', server.address())
@@ -34,3 +34,10 @@ server.on('error', (error) => {
 server.on('close', () => {
     log('server closed')
 })
+
+// 引入模块
+// 创建服务器
+// 约定接口、监听端口
+// 监听链接、监听接收数据、发送数据返回
+// 监听错误
+// 监听服务器关闭
