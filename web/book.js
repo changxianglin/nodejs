@@ -10,3 +10,5 @@ https.createServer(options, function(req, res) {
     res.writeHead(200)
     res.end('Hello world\n')
 }).listen(3000)
+
+// client - http - server - database
