@@ -45,7 +45,7 @@ const querystring = require('querystring')
 // }).listen('2000', '127.0.0.1')
 
 // console.log('server running.')
-
+// test
 http.createServer(function (req, res) {
     const pathname = url.parse(req.url).pathname
     const paths = pathname.split('/')
@@ -64,4 +64,3 @@ handles.index.index = function(req, res, foo, bar) {
     res.writeHead(200)
     res.end(foo)
 }
-
