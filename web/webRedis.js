@@ -12,7 +12,7 @@ client.select('15', function(error){
             } else {
                 console.log(res);
             }
-
+            // 添加注解
             // 关闭链接
             client.end();
         });
