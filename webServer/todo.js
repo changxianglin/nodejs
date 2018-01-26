@@ -21,6 +21,25 @@ const server = http.createServer(function(req, res) {
             })
             res.end()
             break
+        case 'DELETE':
+            var path = url.parse(req.url).pathname
+            var i = parseInt(path.slice(1), 10)
+
+            if(isNaN(i)) {
+                res.statusCode = 400
+                res.end('Invalid item id')
+            } else if(!items[i]) {
+                res.statusCode = 404
+                res.end('Item not found')
+            } else {
+                items.splice(i, 1)
+                res.end('ok\n')
+            }
+            break
+        case 'PUT'
+            var path = url.parse(req.url).pathname
+            var i = parseInt()
+            break
     }
 })
 
