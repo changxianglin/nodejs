@@ -42,21 +42,31 @@ function upload(req, res) {
         return
     }
     var form = new formidable.IncomingForm()
-    form.on('filed', function(field, vlaue) {
-        console.log(filed)
-        console.log(value)
+    // form.on('filed', function(field, vlaue) {
+    //     console.log(filed)
+    //     console.log(value)
+    // })
+    // form.on('file', function(name, file) {
+    //     console.log(name)
+    //     console.log(file)
+    // })
+    // form.on('end', function() {
+    //     res.end('upload complate!')
+    // })
+    // form.parse(req)
+    form.parse(req, function(err, fields, files) {
+        console.log(fields)
+        console.log(files)
+        res.end('upload complete')
     })
-    form.on('file', function(name, file) {
-        console.log(name)
-        console.log(file)
+    form.on('progress', function (bytesReceived, bytesExpecte) {
+        var percent = Math.floor(bytesReceived / bytesExpecte * 100)
+        console.log(percent)
     })
-    form.on('end', function() {
-        res.end('upload complate!')
-    })
-    form.parse(req)
 }
 
 function isFormData(req) {
     var type = req.headers['content-type'] || ''
     return 0 == type.indexOf('multipart/form-data')
 }
+
