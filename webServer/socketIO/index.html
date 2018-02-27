@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<script type="text/javascript" src = "http://epub.ituring.com.cn/socket.io/socket.io.js"></script>-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect()
+        socket.on('message', function(time) {
+            document.getElementById('time').innerHTML = time
+        })
+    </script>
+</head>
+<body>
+Current server time is: <b><span id = "time"></span></b>
+</body>
+</html>
