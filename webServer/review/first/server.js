@@ -22,12 +22,16 @@ server.on('connection', (socket) => {
         const r = foo.toString()
         console.log('接受到的原始数据', r, typeof(r))
 
-        const response = 'HTTP/1.1/'
+        const response = 'HTTP/1.1 200 OK\r\nContent-Length: 12\r\n\r\nHello World!'
+
+        socket.write(response)
+
+    //    socket.destroy()
     })
 })
 
-server.on('error', () => {
-    console.log('server error', error)
+server.on('error', (err) => {
+    console.log('server error', err)
 })
 
 server.on('close', () => {
