@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>player</title>
+  </head>
+  <body>
+    <video src="node3-2-model原理和继承.mp4"  id = 'videos'>
+
+    </video>
+    <div class="">
+      <button type="button" name="button">
+        <input type="file" name="" value="" id = 'road'>
+      </button>
+      <button type="button" name="button" id = 'play'>play</button>
+      <button type="button" name="button" id = 'pause'>pause</button>
+      <button type="button" name="button" id = 'speed'>speed</button>
+      <button type="button" name="button" id = 'slow'>slow</button>
+      <button type="button" name="button" id = 'min'>voiceR</button>
+      <button type="button" name="button" id = 'max'>voiceA</button>
+      <button type="button" name="button" id = 'info'></button>
+    </div>
+    <script type="text/javascript">
+    var __main = function() {
+      var videos = document.querySelector('#videos')
+      var road = document.querySelector('#road')
+      var play = document.querySelector('#play')
+      var pause = document.querySelector('#pause')
+      var speed = document.querySelector('#speed')
+      var slow = document.querySelector('#slow')
+      var min = document.querySelector('#min')
+      var max = document.querySelector('#max')
+      var info = document.querySelector('#info')
+
+      videos.addEventListener('click', function(event) {
+        console.log('sceen')
+        if(videos.classList.contains('add')) {
+          videos.classList.remove('add')
+          videos.pause()
+          info.innerText = '状态 Pause' + '剩余时间' + ((videos.duration) - (videos.currentTime))
+        } else {
+          videos.classList.add('add')
+          videos.play()
+          info.innerText = '状态 Play'
+        }
+      })
+
+      road.addEventListener('change', function() {
+        console.log('change')
+        var roads = road.value
+        var want = roads.split("\\")[2]
+        console.log(want)
+        videos.src = want
+        videos.play()
+      })
+
+      play.addEventListener('click', function() {
+        console.log('play')
+        videos.play()
+        info.innerText = '状态 Play'
+      })
+
+      pause.addEventListener('click', function() {
+        console.log('pause')
+        console.log((videos.duration) - (videos.currentTime))
+        videos.pause()
+        info.innerText = '状态 Pause' + '剩余时间' + ((videos.duration) - (videos.currentTime))
+      })
+
+      speed.addEventListener('click', function() {
+        console.log('play')
+        console.log(videos.playbackRate)
+        videos.playbackRate += 0.1
+        info.innerText = '播放速度 ' + videos.playbackRate
+      })
+
+      slow.addEventListener('click', function() {
+        console.log('play')
+        console.log(videos.playbackRate)
+        videos.playbackRate -= 0.1
+        info.innerText = '播放速度 ' + videos.playbackRate
+      })
+
+      min.addEventListener('click', function() {
+        console.log('play')
+        console.log(videos.volume)
+        var flag = videos.volume
+        if(flag >= 0) {
+          videos.volume -= 0.1
+        } else {
+          video.volume = 0.1
+        }
+        info.innerText = '音量大小 ' + videos.volume
+      })
+
+      max.addEventListener('click', function() {
+        console.log('play')
+        console.log(videos.volume)
+        var flag = videos.volume
+        if(flag <= 1) {
+          videos.volume += 0.1
+        } else {
+          videos.volume = 1
+        }
+        info.innerText = '音量大小 ' + videos.volume
+      })
+    }
+
+    __main()
+    </script>
+  </body>
+</html>
