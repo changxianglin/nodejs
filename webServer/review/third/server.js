@@ -43,8 +43,8 @@ const parsedPath = (path) => {
 }
 
 // 生产 request 对应的响应函数
-const responseFor = (request) => {
-    const raw = request.raw
+const responseFor = (r, request) => {
+    const raw = r
     const raws = raw.split(' ')
 
 //    request 自定义对象，
@@ -53,14 +53,17 @@ const responseFor = (request) => {
     let {path, query} = parsedPath(pathname)
     request.path = path
     request.query = query
-    request.body = raws.split('\r\n\r\n')[0]
+    request.body = raw.split('\r\n\r\n')[1]
+
     log('path and query', path, query)
 
     const route = {}
 
     const routes = Object.assign(route, routeMapper)
     const response = routes[path] || error
-    return response(request)
+    const resp =  response(request)
+
+    return resp
 }
 
 const run = (host = '', port = 3000) => {
