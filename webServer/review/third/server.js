@@ -18,6 +18,7 @@ const error = (code = 404) => {
 
 //解析 path
 const parsedPath = (path) => {
+
     const index = path.indexOf('?')
     if(index === -1) {
         return {
