@@ -22,7 +22,7 @@ const parsedPath = (path) => {
     if(index === -1) {
         return {
             path: path,
-            query: {}
+            query: {},
         }
     } else {
         const l = path.split('?')
@@ -44,10 +44,12 @@ const parsedPath = (path) => {
 
 // 生产 request 对应的响应函数
 const responseFor = (r, request) => {
+
     const raw = r
     const raws = raw.split(' ')
 
 //    request 自定义对象，
+    request.raw = r
     request.method = raws[0]
     let pathname = raws[1]
     let {path, query} = parsedPath(pathname)
@@ -79,11 +81,11 @@ const run = (host = '', port = 3000) => {
             const request = new Request()
 
             const r = data.toString('utf8')
-            request.raw = r
+            // request.raw = r
             const ip = s.localAddress
             log(`ip and request, ${ip}\n${r}`)
 
-            const response = responseFor(request)
+            const response = responseFor(r, request)
 
             s.write(response)
 
