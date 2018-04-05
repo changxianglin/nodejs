@@ -20,7 +20,7 @@ const randomStr = () => {
     return s
 }
 
-const currentUser = (request) {
+const currentUser = (request) => {
     const id = request.cookies.user || ''
     log('debug session', session, id, request.cookies)
     const username = session[id] || '游客'
@@ -141,6 +141,30 @@ const message = (request) => {
     body = body.replace('{{messages}}', ms)
     console.log('replace 之后的 body', body)
     const headers = {
-        
+        'Content-Type': 'text/html',
     }
+    const header = headerFormMapper(headers)
+    const r = header + '\r\n' + body
+    return r
 }
+
+const static = (request) => {
+    const filename = request.query.file || 'doge.gif'
+    const path = `static/${filename}`
+    const body = fs.readFileSync(path)
+    const header = headerFormMapper()
+
+    const h = Buffer.form(header + '\r\n')
+    const r = Buffer.concat([h, body])
+    return r
+}
+
+const routeMapper = {
+    '/': index,
+    '/static': static,
+    '/login': login,
+    '/register': register,
+    '/message': message,
+}
+
+module.exports = routeMapper
