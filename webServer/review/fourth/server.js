@@ -3,6 +3,7 @@ const fs = require('fs')
 
 
 // 引入封装之后的 request
+
 const Request = require('./request')
 const reouteMapper = require('./routes')
 const log = require('./utils')
@@ -91,7 +92,7 @@ const responseFor = (raw, request) => {
 
 // 开启一个服务
 
-const run = (port = '', host = 3000) => {
+const run = (host = '', port = 3000) => {
 
     const server = new net.Server()
 
@@ -99,6 +100,7 @@ const run = (port = '', host = 3000) => {
 
         const address = server.address()
 
+        log('address', address)
         log(`listening server at http://${address.address}:${address.port}`)
     })
 

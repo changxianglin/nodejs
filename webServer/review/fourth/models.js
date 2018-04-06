@@ -129,12 +129,12 @@ class User extends Model {
     }
 }
 
-const test = () => {
-    const u = User.find('username', 'gua1')
-    console.log('us', us)
-}
-
-test()
+// const test = () => {
+//     const u = User.find('username', 'gua1')
+//     console.log('us', us)
+// }
+//
+// test()
 
 class Message extends Model {
     constructor(form = {}) {
