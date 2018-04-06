@@ -144,14 +144,14 @@ class Message extends Model {
         this.extra = 'extra message'
     }
 
-    static fhfa() {
+    // static fhfa() {
 
-    }
+    // }
 
-    static uuxy = 'uuxy'
+    // static uuxy = 'uuxy'
 }
 
-User.uuxy = 'es6 uuxy'
+// User.uuxy = 'es6 uuxy'
 
 module.exports = {
     User: User,
