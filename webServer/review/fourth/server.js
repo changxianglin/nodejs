@@ -51,7 +51,7 @@ const parsedPath = (path) => {
 
 const parsedRaw = (raw) => {
     const r = raw
-    const line  = r.split('')
+    const line  = r.split(' ')
     const method = line[0]
     const url = line[1]
 
@@ -135,7 +135,7 @@ const run = (host = '', port = 3000) => {
 // 入口程序
 
 const  __main = function() {
-    run('0.0.0.0', 5000)
+    run('127.0.0.1', 5000)
 }
 
 __main()

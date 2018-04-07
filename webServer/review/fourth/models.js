@@ -79,7 +79,7 @@ class Model{
         const models = cls.all()
         console.log('debug models', models)
         if(this.id === undefined) {
-            if(modles.lenght > 0) {
+            if(models.lenght > 0) {
                 const last = models[modles.length - 1]
                 this.id = last.id + 1
             } else {

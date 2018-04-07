@@ -39,13 +39,13 @@ const template = (name) => {
 }
 
 
-const headerFormMapper = (mapper = {}) => {
+const headerFromMapper = (mapper = {}) => {
     let base = 'HTTP/1.1 200 OK\r\n'
 
     const keys = Object.keys(mapper)
     const s = keys.map((k) => {
         const v = mapper[k]
-        const h = `${k}:${v}\r\n`
+        const h = `${k}: ${v}\r\n`
         return h
     }).join('')
 
@@ -115,13 +115,13 @@ const register = (request) => {
     } else {
        result = ''
     }
-    let body = template('regiser.html')
+    let body = template('register.html')
     body = body.replace('{{result}}', result)
     const headers = {
         'Content-Type': 'text/html',
     }
 
-    const header = headerFormMapper(headers)
+    const header = headerFromMapper(headers)
     const r = header + '\r\n' + body
     return r
 }
@@ -152,9 +152,9 @@ const static = (request) => {
     const filename = request.query.file || 'doge.gif'
     const path = `static/${filename}`
     const body = fs.readFileSync(path)
-    const header = headerFormMapper()
+    const header = headerFromMapper()
 
-    const h = Buffer.form(header + '\r\n')
+    const h = Buffer.from(header + '\r\n')
     const r = Buffer.concat([h, body])
     return r
 }
