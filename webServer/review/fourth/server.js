@@ -5,7 +5,7 @@ const fs = require('fs')
 // 引入封装之后的 request
 
 const Request = require('./request')
-const reouteMapper = require('./routes')
+const routeMapper = require('./routes')
 const log = require('./utils')
 
 
@@ -71,7 +71,7 @@ const parsedRaw = (raw) => {
 
 
 const responseFor = (raw, request) => {
-    const r = parseRaw(raw)
+    const r = parsedRaw(raw)
     request.method = r.method
     request.path = r.path
     request.query = r.query

@@ -7,7 +7,7 @@ class Request {
         this.path = ''
         this.query = {}
         this.body = ''
-        this.header = {}
+        this.headers = {}
         this.cookies = {}
     }
 
@@ -15,17 +15,17 @@ class Request {
         const cookies = this.headers.Cookie || ''
         const pairs = cookies.split(';')
 
-        pairs.forEach((pairs) => {
+        pairs.forEach((pair) => {
             if(pair.includes('=')) {
-                const [k, v] = pairs.split('=')
+                const [k, v] = pair.split('=')
                 this.cookies[k] = v
             }
         })
     }
 
     addHeaders(headers) {
-        headers.forEach((headers) => {
-            const [k, v] = headers.split(':')
+        headers.forEach((header) => {
+            const [k, v] = header.split(':')
             this.headers[k] = v
         })
 
