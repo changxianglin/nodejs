@@ -22,7 +22,7 @@ server.on('connection', (socket) => {
         const r = foo.toString()
         console.log('接受到的原始数据', r, typeof(r))
 
-        const response = 'HTTP/1.1 200 OK\r\nContent-Length: 12\r\n\r\nHello World!'
+        const response = 'HTTP/1.1 200 OK\r\nContent-Length: 31\r\n\r\nHello World!\r\nwelcome to earth.'
 
         socket.write(response)
 
