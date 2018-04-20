@@ -7,20 +7,10 @@ const log = (...args) => {
     console.log.apply(console, args)
 }
 
-
-const error = (code = 404) => {
-    const e = {
-        404: 'HTTP/1.1 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>'
-    }
-
-    const r = e[code] || ''
-    return r
-}
-
 const routeIndex = () => {
     const header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
 
-    const body = '<h1>Hello World</h1><img src="doge.gif>"'
+    const body = '<h1>Hello World</h1><img src = "doge.gif">'
 
     const r = header + '\r\n' + body
     return r
@@ -31,12 +21,20 @@ const routeImage = () => {
     const file = 'doge.gif'
 
     const body = fs.readFileSync(file)
-    const h = Buffer.form(header)
+    const h = Buffer.from(header)
     const r = Buffer.concat([h, body])
 
     return r
 }
 
+const error = (code = 404) => {
+    const e = {
+        404: 'HTTP/1.1 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>'
+    }
+
+    const r = e[code] || ''
+    return r
+}
 
 const responseForPath = (path) => {
     const r = {
@@ -70,6 +68,8 @@ const run = (host = '', port = 3000) => {
             const response = responseForPath(path)
 
             socket.write(response)
+
+            socket.destroy()
     })
     })
 

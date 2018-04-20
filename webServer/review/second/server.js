@@ -9,7 +9,7 @@ const log = (...args) => {
 
 const routeIndex = () => {
     const header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
-    const body = '<h1>Hello World</h1><img src = "doge.gif">'
+    const body = '<h1>Hello World</h1><img src="doge.gif">'
 
     const r = header + '\r\n' + body
     return r
