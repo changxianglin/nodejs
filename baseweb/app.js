@@ -1,5 +1,10 @@
 var express = require('express')
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+const Cat = mongoose.model('Cat', { name: String });
+
 var  app = express()
 
 
@@ -12,6 +17,8 @@ app.get('/request', function (req, res) {
 })
 
 app.post('/info', function (req, res) {
+    const kitty = new Cat({ name: 'Zildjian to form' });
+    kitty.save().then(() => console.log('meow'));
     res.send('post can to server!!!')
 })
 
