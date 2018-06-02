@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<h1>ajax</h1>
+<form action="">
+    <label for="first">1</label>
+    <input type="text" id = 'first'>
+    <label for="end">2</label>
+    <input type="text" id = 'end'>
+</form>
+<button>click</button>
+<script>
+    var foo = function () {
+        var intent = document.querySelector('button')
+        intent.addEventListener('click', function() {
+            console.log('click')
+            $.get("/ajaxinfo",
+                {
+                    name: document.querySelector('#first').value,
+                    end: document.querySelector('#end').value
+                },
+                function(data,status){
+                    alert("数据: \n" + data + "\n状态: " + status);
+                });
+        })
+    }
+
+    foo()
+</script>
+</body>
+</html>
