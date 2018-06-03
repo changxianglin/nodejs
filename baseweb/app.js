@@ -68,7 +68,23 @@ app.post('/info', urlencodedParser, function (req, res) {
     res.send('post can to server!!!')
 })
 
+// 删除数据
+app.get('/deleteInfo', urlencodedParser, function (req, res) {
+    Dog.remove({'end': req.query.end}, function (err, data) {
+        if(err) return console.log(err)
+        res.json(data)
+    })
+})
+
+// 修改数据
+app.get('/updateInfo', urlencodedParser, function (req, res) {
+    Dog.update({'end': req.query.old}, {$set: {'end': req.query.end}}, function (err, data) {
+        if(err) return  console.log(err)
+        res.json(data)
+    })
+})
 // 启动入口
 app.listen(5000, function () {
     console.log('app running port 5000')
 })
+

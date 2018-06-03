@@ -16,7 +16,16 @@
     <label for="end">2</label>
     <input type="text" id = 'end'>
 </form>
-<button>click</button>
+<button>add</button>
+<hr>
+<form action="">
+    <label for="old">olddata</label>
+    <input type="text" id = 'old'>
+    <label for="update">update</label>
+    <input type="text" id = 'update'>
+</form>
+<button id = 'updateBtn'>update</button>
+<hr>
 <ul id = "write"></ul>
 <script>
     var foo = function () {
@@ -48,6 +57,7 @@
                    var intent = document.querySelector('#write')
                     data.forEach(function(index) {
                         var list = document.createElement('li')
+                        list.classList.add('remove')
                         list.innerText = index.end
                         intent.appendChild(list)
                     })
@@ -56,6 +66,43 @@
 
     bar()
 
+    var deleteData = function() {
+        var intent = document.querySelector('#write')
+        intent.addEventListener('click', function (e) {
+            if(e.target.className == 'remove') {
+                var mark = e.target.innerText
+                console.log(mark)
+                $.get("/deleteInfo",
+                    {
+                        end: mark,
+                    },
+                    function(data,status){
+                        alert('delete success')
+                        location.reload()
+                    });
+
+            }
+        })
+    }
+
+    deleteData()
+
+    var add = function () {
+        var intent = document.querySelector('#updateBtn')
+        intent.addEventListener('click', function() {
+            $.get("/updateInfo",
+                {
+                    old: document.querySelector('#old').value,
+                    end: document.querySelector('#update').value,
+                },
+                function(data,status){
+                    alert('update success')
+                    location.reload()
+                });
+        })
+    }
+
+    add()
 </script>
 </body>
 </html>
