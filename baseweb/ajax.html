@@ -17,6 +17,7 @@
     <input type="text" id = 'end'>
 </form>
 <button>click</button>
+<ul id = "write"></ul>
 <script>
     var foo = function () {
         var intent = document.querySelector('button')
@@ -28,12 +29,33 @@
                     end: document.querySelector('#end').value
                 },
                 function(data,status){
-                    alert("数据: \n" + data + "\n状态: " + status);
+                    alert('save success')
+                    location.reload()
                 });
         })
     }
 
     foo()
+
+    var bar = function () {
+            $.get("/allinfo",
+                {
+                    name: document.querySelector('#first').value,
+                    end: document.querySelector('#end').value
+                },
+                function(data,status){
+                   console.log(data);
+                   var intent = document.querySelector('#write')
+                    data.forEach(function(index) {
+                        var list = document.createElement('li')
+                        list.innerText = index.end
+                        intent.appendChild(list)
+                    })
+                });
+    }
+
+    bar()
+
 </script>
 </body>
 </html>
