@@ -1,10 +1,10 @@
-const Koa = require('koa');
+const Koa = require('koa')
 const fs = require('fs')
-const Router = require('koa-router');
-const bodyParser = require('koa-bodyparser');
+const Router = require('koa-router')
+const bodyParser = require('koa-bodyparser')
 
-const app = new Koa();
-const router = new Router();
+const app = new Koa()
+const router = new Router()
 
 
 const index = ctx => {
@@ -16,14 +16,18 @@ const index = ctx => {
 const main = ctx => {
     console.log(ctx.request.query)
     let content = ctx.request.query
+    console.log(typeof content)
+    fs.appendFileSync('GETmessage.txt', JSON.stringify(content));
     ctx.response.type = 'json'
     ctx.response.body = content
-};
+}
 
 const postData = ctx => {
     console.log('post')
     console.log(ctx.request.body)
     let content = ctx.request.body
+    console.log(typeof content)
+    fs.appendFileSync('POSTmessage.txt', JSON.stringify(content));
     ctx.response.type = 'json'
     ctx.response.body = content
 }
@@ -35,5 +39,7 @@ router.get('/', index)
 router.get('/login', main)
 router.post('/data', postData)
 
-app.listen(3000);
+app.listen(8080, () => {
+    console.log('app run in port 8080')
+});
 
