@@ -1,13 +1,34 @@
 const path = require('path')
-const express = require('express')
-const app = express()
-const indexRouter = require('./routers/index')
-const usersRouter = require('./routers/users')
+const fs = require('fs')
+var express = require('express');
+var cheerio = require('cheerio');
+var superagent = require('superagent');
 
-app.set('views', path.join(__dirname, 'views')) // 设置模板文件目录
-app.set('view engine', 'ejs') // 设置模板引擎为 ejs
+var app = express();
 
-app.use('/', indexRouter)
-app.use('/users', usersRouter)
+app.get('/', function (req, res, next) {
+    superagent.get('https://cnodejs.org/')
+        .end(function (err, sres) {
+            if (err) {
+                return next(err);
+            }
+            var $ = cheerio.load(sres.text);
+            console.log(sres.text)
+            fs.appendFileSync('msg.txt', sres.text)
+            var items = [];
+            $('#topic_list .topic_title').each(function (idx, element) {
+                var $element = $(element);
+                items.push({
+                    title: $element.attr('title'),
+                    href: $element.attr('href')
+                });
+            });
 
-app.listen(9000)
+            res.send(items);
+        });
+});
+
+
+app.listen(3000, function () {
+    console.log('app is listening at port 3000');
+});
