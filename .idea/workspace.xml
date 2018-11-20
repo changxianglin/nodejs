@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f0d42e4-b607-40e9-961e-31be756e0e3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/request/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/request/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/request/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/request/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,17 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/request/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+            <state relative-caret-position="251">
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request/request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -74,6 +86,7 @@
         <option value="$PROJECT_DIR$/baseWebsite/message.txt" />
         <option value="$PROJECT_DIR$/baseWebsite/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/request/request.js" />
         <option value="$PROJECT_DIR$/request/index.js" />
       </list>
     </option>
@@ -496,9 +509,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="528" />
-    <option name="y" value="59" />
-    <option name="width" value="1508" />
+    <option name="x" value="84" />
+    <option name="y" value="23" />
+    <option name="width" value="1646" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectView">
@@ -602,18 +615,18 @@
       <workItem from="1530297227699" duration="3405000" />
       <workItem from="1530630462361" duration="129000" />
       <workItem from="1530800346171" duration="17000" />
-      <workItem from="1542727813116" duration="1480000" />
+      <workItem from="1542727813116" duration="4738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32534000" />
+    <option name="totallyTimeSpent" value="35792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="1123" height="821" extended-state="0" />
+    <frame x="84" y="23" width="1646" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3099362" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20987654" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -639,13 +652,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/nodemysqlu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/nodemysqld.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -937,10 +943,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/request/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/request/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        <state relative-caret-position="251">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
         </state>
       </provider>
     </entry>
