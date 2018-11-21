@@ -1,5 +1,16 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
+const mongoose = require('mongoose')
+
+
+mongoose.connect('mongodb://timer:timer123@ds039737.mlab.com:39737/timer')
+
+var FirstSchema = new mongoose.Schema({
+    timer: Date
+})
+
+var newTimer = mongoose.model('newTimer', FirstSchema)
+
 
 var getInfo = () => {
     axios.get('http://www.ruanyifeng.com/blog/').then((res) => {
@@ -16,6 +27,14 @@ var getInfo = () => {
         // })
         // console.log(listItem, '???')
 
+
+        newTimer({
+            timer: new Date()
+        }).save((err) => {
+            if(err) throw err
+            console.log('save good')
+        })
+
         var $ = cheerio.load(res.data);
 
         // 输出导航的html代码
@@ -26,4 +45,13 @@ var getInfo = () => {
     })
 }
 
-getInfo()
+// getInfo()
+
+var findInfo = () => {
+    newTimer.find({}, function(err, data) {
+        if(err) throw  err
+        console.log(data)
+    })
+}
+
+findInfo()
