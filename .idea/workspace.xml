@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f0d42e4-b607-40e9-961e-31be756e0e3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Imooc/views/includes/head.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Imooc/views/includes/header.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Imooc/views/layout.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proxy/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imooc/views/admin.jade" beforeDir="false" afterPath="$PROJECT_DIR$/Imooc/views/pages/admin.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imooc/views/detail.jade" beforeDir="false" afterPath="$PROJECT_DIR$/Imooc/views/pages/detail.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imooc/views/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/Imooc/views/pages/index.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imooc/views/list.jade" beforeDir="false" afterPath="$PROJECT_DIR$/Imooc/views/pages/list.jade" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,74 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/app.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/step/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/pages/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/pages/list.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/includes/head.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/includes/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/pages/detail.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="22" column="32" lean-forward="true" selection-end-line="22" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Imooc/views/pages/admin.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+            <state relative-caret-position="304">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -156,6 +87,8 @@
         <option value="$PROJECT_DIR$/Imooc/views/pages/index.jade" />
         <option value="$PROJECT_DIR$/Imooc/views/pages/detail.jade" />
         <option value="$PROJECT_DIR$/Imooc/views/pages/admin.jade" />
+        <option value="$PROJECT_DIR$/proxy/index.js" />
+        <option value="$PROJECT_DIR$/step/app.js" />
       </list>
     </option>
   </component>
@@ -176,6 +109,7 @@
     <handled-path value="$PROJECT_DIR$/a_pro/newDemo/node_modules" />
     <handled-path value="$PROJECT_DIR$/a_pro/node_modules" />
     <handled-path value="$PROJECT_DIR$/baseWebsite/node_modules" />
+    <handled-path value="$PROJECT_DIR$/proxy/node_modules" />
     <handled-path value="$PROJECT_DIR$/request/node_modules" />
     <handled-path value="$PROJECT_DIR$/web/node_modules" />
   </component>
@@ -564,6 +498,7 @@
       <path value="$PROJECT_DIR$/chatroom/package.json" />
       <path value="$PROJECT_DIR$/es6/gulp-in-action/test-gulp-webapp/package.json" />
       <path value="$PROJECT_DIR$/mock/package.json" />
+      <path value="$PROJECT_DIR$/proxy/package.json" />
       <path value="$PROJECT_DIR$/request/package.json" />
       <path value="$PROJECT_DIR$/testpost&amp;mongo/package.json" />
       <path value="$PROJECT_DIR$/web/package.json" />
@@ -577,8 +512,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="471" />
-    <option name="y" value="428" />
+    <option name="x" value="692" />
+    <option name="y" value="45" />
     <option name="width" value="1440" />
     <option name="height" value="821" />
   </component>
@@ -597,20 +532,7 @@
             <path>
               <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="Imooc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="Imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="Imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -701,15 +623,17 @@
       <workItem from="1542810138698" duration="1616000" />
       <workItem from="1542905868695" duration="1582000" />
       <workItem from="1542985326422" duration="533000" />
-      <workItem from="1542985896003" duration="2170000" />
+      <workItem from="1542985896003" duration="2635000" />
+      <workItem from="1543001065845" duration="519000" />
+      <workItem from="1543030830022" duration="261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41847000" />
+    <option name="totallyTimeSpent" value="43092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="471" y="428" width="1440" height="821" extended-state="0" />
+    <frame x="692" y="45" width="1440" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20933522" />
@@ -738,20 +662,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/webRedis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webDatabase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/http/https.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1031,8 +941,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Imooc/views/pages/detail.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="22" column="32" lean-forward="true" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="418">
+          <caret line="22" column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1040,6 +950,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
