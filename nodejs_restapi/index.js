@@ -1,8 +1,16 @@
 const express = require('express')
 const morgan = require('morgan')
+const mongoose = require('mongoose')
+
 const app = express()
 
 app.use(morgan('short'))
+
+app.get('/user/:id', (req, res) => {
+  console.log('Fetching user with id: ' + req.params.id)
+  const connection = mongoose.connect('mongodb://localhost/resetapi', {useNewUrlParser: true})
+  res.end()
+})
 
 app.get('/', (req, res) => {
   console.log('Response to root route')
