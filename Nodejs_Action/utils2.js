@@ -1,0 +1,12 @@
+const util = require('util')
+
+let obj = {
+  keyWrod: 'node.js',
+  name: 'huruji'
+}
+
+let str = util.inspect(obj, {
+  'color': true
+})
+
+console.log(str)
