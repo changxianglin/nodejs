@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
-    "express3-handlebars": "^0.5.2"
+    "express-handlebars": "^3.0.2"
   }
 }
