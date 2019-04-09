@@ -65,5 +65,14 @@ app.post('/process-contact', (req, res) => {
   }
 })
 
+var tours = [
+  { id: 0, name: 'Hood River', price: 99.99 },
+  { id: 1, name: 'Oregon Coast', price: 149.55 },
+]
+
+app.get('/api/tours', (req, res) => {
+  res.json(tours)
+})
+
 app.listen(3000)
 
