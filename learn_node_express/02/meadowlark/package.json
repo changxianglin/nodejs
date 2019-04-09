@@ -10,6 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.2"
+    "express-handlebars": "^3.0.2",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.1"
   }
 }
