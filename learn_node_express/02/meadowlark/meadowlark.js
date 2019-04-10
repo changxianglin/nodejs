@@ -1,5 +1,7 @@
 var express = require('express')
 var exphbs = require('express-handlebars')
+var bodyParser = require('body-parser')
+var fromidable = require('formidable')
 
 var fortune = require('./lib/fortune')
 
@@ -7,7 +9,8 @@ var app = express()
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
-
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.set('port', process.env.PORT || 3000)
 
@@ -19,6 +22,18 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', { fortune: fortune.getFortune() })
+})
+
+app.get('/newsletter', (req, res) => {
+  res.render('newsletter', { csrf: 'CSRF token goes here' })
+})
+
+app.post('/process', (req, res) => {
+  console.log('Form (from querystring): ' + req.query.form)
+  console.log('CSRF token (from hidden form field): ' + req.body._csrf)
+  console.log('Name (from visible from field): ' + req.body.name)
+  console.log('Email (from visible from field): ' + req.body.email)
+  res.redirect(303, '/thank-you')
 })
 
 app.use((req, res, next) => {
