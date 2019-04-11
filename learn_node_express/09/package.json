@@ -1,0 +1,16 @@
+{
+  "name": "09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "xianglin <281532612@qq.com> (zhourong.clube)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
+  }
+}
