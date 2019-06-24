@@ -6,13 +6,21 @@ const app = new express()
 const content = []
 const path = 'files/'
 
-app.get('/', (req, res) => {
+const findFiles = function(path) {
   var files = fs.readdirSync(path)
   files.forEach((item) => {
-    content.push(item)
+    if(fs.statSync(path + item).isFile()) {
+      content.push(path + item)
+    } else if(fs.statSync(path + item).isDirectory()) {
+      findFiles(path + item + '/')
+    }
   })
+}
+
+app.get('/', (req, res) => {
+  findFiles(path)
   var html = content.map((item) => {
-    return `<a href =` + `down?file=${path + item}>` + `${path + item}</a><br />`
+    return `<a href =` + `down?file=${item}>` + `${item}</a><br />`
   }).join('')
   res.send(html)
 })
