@@ -9,6 +9,14 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({extends: false}))
 app.use(bodyParser.json())
 
+
+app.engine('art', require('express-art-template'))
+app.set('view', {
+  debug: process.env.NODE_ENV !== 'production'
+})
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'art')
+
 app.get('/index.html', (req, res) => {
   const filePath = path.join(__dirname, 'views', 'index.html')
   const contents = fs.readFileSync(filePath, 'utf-8')

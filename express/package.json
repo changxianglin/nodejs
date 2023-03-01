@@ -10,7 +10,9 @@
   "author": "xianglin <281532612@qq.com> (http://zhourong.host/)",
   "license": "MIT",
   "dependencies": {
+    "art-template": "^4.13.2",
     "body-parser": "^1.20.2",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-art-template": "^1.0.1"
   }
 }
