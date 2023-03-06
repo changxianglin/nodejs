@@ -62,6 +62,14 @@ app.get('/login.html', function(req, res) {
   res.send(contents)
 })
 
+app.get('/list.html', (req, res) => {
+  res.render('list')
+})
+
+app.get('/detail/:id', (req, res) => {
+  res.send('detail page ' + req.params.id)
+})
+
 app.get('/', (req, res) => {
   res.send('hello')
 })
