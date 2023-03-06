@@ -18,7 +18,13 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'html')
 
 app.get('/render', (req, res) => {
-  res.render('index.html')
+  let dataList = {
+    name: 'Jack',
+    age: 17,
+    job: 'fe',
+    childrens: ['Tom', 'John', 'Tony']
+  }
+  res.render('index.html', dataList)
 })
 
 app.get('/index.html', (req, res) => {

@@ -9,6 +9,19 @@
 <body>
   <h1>首页</h1>
   <h3>欢迎使用 express</h3>
+  <p>
+    <ul>
+      <li>name: {{name}}</li>
+      <li>age: {{age}}</li>
+      {{if age > 18}}
+      <li>成年人</li>
+      {{/if}}
+      <li>home</li>
+      {{each childrens}}
+      <li>{{$index + 1}} kids is {{$value}}</li>
+      {{/each}}
+    </ul>
+  </p>
   <img src="/img/mzlv.png" alt="">
 </body>
 </html>
