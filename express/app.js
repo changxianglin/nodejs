@@ -10,12 +10,16 @@ app.use(bodyParser.urlencoded({extends: false}))
 app.use(bodyParser.json())
 
 
-app.engine('art', require('express-art-template'))
-app.set('view', {
+app.engine('html', require('express-art-template'))
+app.set('views options', {
   debug: process.env.NODE_ENV !== 'production'
 })
 app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'art')
+app.set('view engine', 'html')
+
+app.get('/render', (req, res) => {
+  res.render('index.html')
+})
 
 app.get('/index.html', (req, res) => {
   const filePath = path.join(__dirname, 'views', 'index.html')
