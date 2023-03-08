@@ -8,13 +8,17 @@ const app = express.Router()
 app.use(bodyParser.urlencoded({extends: false}))
 app.use(bodyParser.json())
 
-template.defaults.import.ageFilter = function(value) {
-  
-}
-app.get('/render', (req, res) => {
-  let dataList = [17, 18, 19, 20, 21, 22]
-  res.render('index.html', dataList)
-})
+// template.defaults.imports.ageFilter = function(value) {
+//   if(value >= 18) {
+//     return value
+//   }
+// }
+// app.get('/render', (req, res) => {
+//   let dataList = {
+//     ages: [17, 18, 19, 20, 21, 22]
+//   }
+//   res.render('index.html', dataList)
+// })
 
 app.get('/index.html', (req, res) => {
   const filePath = path.join(__dirname, 'views', 'index.html')

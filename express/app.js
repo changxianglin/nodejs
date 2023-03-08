@@ -4,6 +4,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
+var template = require('art-template');
 
 const routers = require('./routers/passport')
 
@@ -21,15 +22,18 @@ app.set('views options', {
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'html')
 
-// app.get('/render', (req, res) => {
-//   let dataList = {
-//     name: 'Jack',
-//     age: 17,
-//     job: 'fe',
-//     childrens: ['Tom', 'John', 'Tony']
-//   }
-//   res.render('index.html', dataList)
-// })
+template.defaults.imports.ageFilter = function(value) {
+  if(value >= 18) {
+    return value
+  }
+}
+
+app.get('/render', (req, res) => {
+   let dataList = {
+    ages: [17, 18, 19, 20, 21, 22]
+  }
+  res.render('index.html', dataList)
+})
 
 // app.get('/index.html', (req, res) => {
 //   const filePath = path.join(__dirname, 'views', 'index.html')
