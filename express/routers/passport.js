@@ -8,13 +8,11 @@ const app = express.Router()
 app.use(bodyParser.urlencoded({extends: false}))
 app.use(bodyParser.json())
 
+template.defaults.import.ageFilter = function(value) {
+  
+}
 app.get('/render', (req, res) => {
-  let dataList = {
-    name: 'Jack',
-    age: 17,
-    job: 'fe',
-    childrens: ['Tom', 'John', 'Tony']
-  }
+  let dataList = [17, 18, 19, 20, 21, 22]
   res.render('index.html', dataList)
 })
 
