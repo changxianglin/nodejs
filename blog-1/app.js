@@ -19,11 +19,11 @@ const serverHandle = (req, res) => {
   const userData = handleUserRouter(req, res)
   if(userData) {
     res.end(JSON.stringify(userData))
+  } else {
+    res.writeHead(404, {"Cotent-type": "text/plain"})
+    res.write('404 not Found\n')
+    res.end()
   }
-
-  res.writeHead(404, {"Cotent-type": "text/plain"})
-  res.write('404 not Found\n')
-  res.end()
 }
 
 module.exports = serverHandle
