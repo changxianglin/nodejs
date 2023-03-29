@@ -6,6 +6,9 @@ const serverHandle = (req, res) => {
   // back 
   res.setHeader('Content-type', 'application/json')
 
+  const url = req.url
+  req.path = url.split('?')[0]
+
   const blogData = handleBlogRouter(req, res)
 
   if(blogData) {
