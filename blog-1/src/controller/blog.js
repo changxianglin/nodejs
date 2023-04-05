@@ -27,7 +27,14 @@ const getDetail = (id) => {
   }
 }
 
+const newBlog = (blogData = {}) => {
+  return {
+    id: 3, // create blog table id
+  }
+}
+
 module.exports = {
   getList,
   getDetail,
+  newBlog,
 }
