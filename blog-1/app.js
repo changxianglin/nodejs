@@ -41,21 +41,25 @@ const serverHandle = (req, res) => {
 
   req.query = querystring.parse(url.split('?')[0])
 
-  const blogData = handleBlogRouter(req, res)
+  getPostData(req).then(postData => {
+    req.body = postData
 
-  if(blogData) {
-    res.end(JSON.stringify(blogData))
-    return 
-  }
+    const blogData = handleBlogRouter(req, res)
 
-  const userData = handleUserRouter(req, res)
-  if(userData) {
-    res.end(JSON.stringify(userData))
-  } else {
-    res.writeHead(404, {"Cotent-type": "text/plain"})
-    res.write('404 not Found\n')
-    res.end()
-  }
+    if(blogData) {
+      res.end(JSON.stringify(blogData))
+      return 
+    }
+
+    const userData = handleUserRouter(req, res)
+    if(userData) {
+      res.end(JSON.stringify(userData))
+    } else {
+      res.writeHead(404, {"Cotent-type": "text/plain"})
+      res.write('404 not Found\n')
+      res.end()
+    }
+  })
 }
 
 module.exports = serverHandle
